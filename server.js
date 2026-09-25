@@ -11,15 +11,15 @@ const PDFDocument = require("pdfkit");
 const multer = require("multer");
 const { parse } = require("csv-parse/sync");
 
-const authenticateToken = require("./middleware/authMiddleware");
-const authorizeRole = require("./middleware/roleMiddleware");
+const authenticateToken = require("./authMiddleware");
+const authorizeRole = require("./roleMiddleware");
 
 const app = express();
 // =========================================================
 // SWAGGER UI
 // =========================================================
 
-const openapiPath = path.join(__dirname, "..", "openapi.yaml");
+const openapiPath = path.join(__dirname, "openapi.yaml");
 const openapiFile = fs.readFileSync(openapiPath, "utf8");
 const openapiDocument = yaml.load(openapiFile);
 
