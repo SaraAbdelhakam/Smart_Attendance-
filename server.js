@@ -23,11 +23,33 @@ const openapiPath = path.join(__dirname, "openapi.yaml");
 const openapiFile = fs.readFileSync(openapiPath, "utf8");
 const openapiDocument = yaml.load(openapiFile);
 
-app.use(
-  "/api-docs",
-  swaggerUi.serve,
-  swaggerUi.setup(openapiDocument)
-);
+app.get("/openapi.json", (req, res) => {
+  res.json(openapiDocument);
+});
+
+app.get("/api-docs", (req, res) => {
+  res.send(`
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>API Docs</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swagger-ui-dist/swagger-ui.css" />
+      </head>
+      <body>
+        <div id="swagger-ui"></div>
+        <script src="https://cdn.jsdelivr.net/npm/swagger-ui-dist/swagger-ui-bundle.js"></script>
+        <script>
+          window.onload = () => {
+            SwaggerUIBundle({
+              url: "/openapi.json",
+              dom_id: "#swagger-ui",
+            });
+          };
+        </script>
+      </body>
+    </html>
+  `);
+});
 
 const upload = multer({
   storage: multer.memoryStorage(),
