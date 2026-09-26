@@ -57,7 +57,7 @@ CREATE TABLE public.attendance_event (
 );
 
 
-ALTER TABLE public.attendance_event OWNER TO postgres;
+ALTER TABLE public.attendance_event OWNER TO neondb_owner;
 
 --
 -- TOC entry 234 (class 1259 OID 24713)
@@ -91,7 +91,7 @@ CREATE TABLE public.attendance_session (
 );
 
 
-ALTER TABLE public.attendance_session OWNER TO postgres;
+ALTER TABLE public.attendance_session OWNER TO neondb_owner;
 
 --
 -- TOC entry 232 (class 1259 OID 24690)
@@ -126,7 +126,7 @@ CREATE TABLE public.audit_event (
 );
 
 
-ALTER TABLE public.audit_event OWNER TO postgres;
+ALTER TABLE public.audit_event OWNER TO neondb_owner;
 
 --
 -- TOC entry 238 (class 1259 OID 24763)
@@ -160,7 +160,7 @@ CREATE TABLE public.correction_request (
 );
 
 
-ALTER TABLE public.correction_request OWNER TO postgres;
+ALTER TABLE public.correction_request OWNER TO neondb_owner;
 
 --
 -- TOC entry 236 (class 1259 OID 24736)
@@ -189,7 +189,7 @@ CREATE TABLE public.courses (
 );
 
 
-ALTER TABLE public.courses OWNER TO postgres;
+ALTER TABLE public.courses OWNER TO neondb_owner;
 
 --
 -- TOC entry 222 (class 1259 OID 24602)
@@ -220,7 +220,7 @@ CREATE TABLE public.enrollment (
 );
 
 
-ALTER TABLE public.enrollment OWNER TO postgres;
+ALTER TABLE public.enrollment OWNER TO neondb_owner;
 
 --
 -- TOC entry 226 (class 1259 OID 24635)
@@ -251,7 +251,7 @@ CREATE TABLE public.rooms (
 );
 
 
-ALTER TABLE public.rooms OWNER TO postgres;
+ALTER TABLE public.rooms OWNER TO neondb_owner;
 
 --
 -- TOC entry 228 (class 1259 OID 24660)
@@ -283,7 +283,7 @@ CREATE TABLE public.sections (
 );
 
 
-ALTER TABLE public.sections OWNER TO postgres;
+ALTER TABLE public.sections OWNER TO neondb_owner;
 
 --
 -- TOC entry 224 (class 1259 OID 24613)
@@ -315,7 +315,7 @@ CREATE TABLE public.timetable (
 );
 
 
-ALTER TABLE public.timetable OWNER TO postgres;
+ALTER TABLE public.timetable OWNER TO neondb_owner;
 
 --
 -- TOC entry 230 (class 1259 OID 24668)
@@ -351,7 +351,7 @@ CREATE TABLE public.users (
 );
 
 
-ALTER TABLE public.users OWNER TO postgres;
+ALTER TABLE public.users OWNER TO neondb_owner;
 
 --
 -- TOC entry 220 (class 1259 OID 24577)
