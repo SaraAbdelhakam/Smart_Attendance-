@@ -2,8 +2,6 @@
 -- PostgreSQL database dump
 --
 
-\restrict Gb8RKqgkeUsfyo1LjN6QCUUPBel5gli9OUPPNdQw0OkJhqR5CmJusi9irypiPTw
-
 -- Dumped from database version 18.6
 -- Dumped by pg_dump version 18.6
 
@@ -636,6 +634,4 @@ ALTER TABLE ONLY public.timetable
 --
 -- PostgreSQL database dump complete
 --
-
-\unrestrict Gb8RKqgkeUsfyo1LjN6QCUUPBel5gli9OUPPNdQw0OkJhqR5CmJusi9irypiPTw
 
