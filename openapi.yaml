@@ -9,7 +9,7 @@ info:
   version: 1.0.0
 
 servers:
-  - url:   - url: https://smart-attendance-smoky.vercel.app         
+  - url: https://smart-attendance-smoky.vercel.app         
     description: Shared development server
 
 tags:
